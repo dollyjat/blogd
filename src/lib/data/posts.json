@@ -1,0 +1,79 @@
+[
+	{
+		"title": "Context Api - UseContext()",
+		"slug": "context-api-usecontext",
+		"tags": ["Web Development", "React", "Beginner Developers", "Programming Blogs", "webdev"],
+		"description": "Context in React is a mechanism to share values, users data, shopping cart or any global state, between components without the need to pass props through every level of the component tree. It helps in avoiding prop drilling",
+		"date": "Thu Dec 07 2023"
+	},
+	{
+		"title": "Creating an Image Expand Gallery",
+		"slug": "creating-an-image-expand-gallery",
+		"tags": ["JavaScript", "CSS", "HTML5", "Web Development", "Developer", "Beginner Developers"],
+		"description": "In this tutorial, we'll walk through the process of creating a responsive image expand gallery using HTML, CSS, and JavaScript",
+		"date": "Fri Jun 07 2024"
+	},
+	{
+		"title": "GitHub Basics Forking vs. Cloning Explained",
+		"slug": "github-basics-forking-vs-cloning-explained",
+		"tags": [
+			"Programming Blogs",
+			"GitHub",
+			"Beginner Developers",
+			"Web Development",
+			"JavaScript",
+			"Open Source"
+		],
+		"description": "There are two fundamental concepts that are really important in version control which are forking and cloning repositories",
+		"date": "Sun Oct 27 2024"
+	},
+	{
+		"title": "Implementing Paystack Payment in a React Application A Step-by-Step Guide",
+		"slug": "implementing-paystack-payment-in-a-react-application-a-step-by-step-guide",
+		"tags": ["payment", "React", "Web Development", "Node.js", "JavaScript"],
+		"description": "Online payment integration is a crucial part of any e-commerce application and it is daunting and confusing to set up sometimes. In this guide",
+		"date": "Thu May 16 2024"
+	},
+	{
+		"title": "Introduction to React",
+		"slug": "introduction-to-react",
+		"tags": ["React", "Beginner Developers", "JavaScript", "Tutorial", "Web Development"],
+		"description": "We'll explore its core concepts and benefits. if you just starting out, understanding React’s",
+		"date": "Tue Mar 12 2024"
+	},
+	{
+		"title": "Props with live Project",
+		"slug": "props-with-live-project",
+		"tags": ["React", "Beginner Developers", "Web Development", "Tutorial"],
+		"description": "In our previous article, we learned about JSX and components and a little bit of props. In this article, we’ll do a deep dive into props",
+		"date": "Thu Jan 11 2024"
+	},
+	{
+		"title": "React Hooks - UseEffect",
+		"slug": "react-hooks-useeffect",
+		"tags": ["React", "Beginner Developers", "JavaScript", "Web Development", "ReactHooks"],
+		"description": "React hook that enables you to perform side effects in functional components. Side effects are operations that affect",
+		"date": "Thu Jan 18 2024"
+	},
+	{
+		"title": "React Hooks - UseState",
+		"slug": "react-hooks-usestate",
+		"tags": ["React", "Beginner Developers", "Tutorial", "articles", "Web Development"],
+		"description": "State is vital for building interactive applications. It enables your components to respond to user interactions, data fetching",
+		"date": "Fri Jul 19 2024"
+	},
+	{
+		"title": "React's Core Concepts - Jsx and Components",
+		"slug": "reacts-core-concepts-jsx-and-components",
+		"tags": ["React", "Beginner Developers", "Programming Blogs", "Tutorial"],
+		"description": "JSX is a syntax extension for JavaScript, and it plays an important role in defining the structure of your React components",
+		"date": "Fri Aug 09 2024"
+	},
+	{
+		"title": "Setting up React your React App",
+		"slug": "setting-up-react-your-react-app",
+		"tags": ["React", "Beginner Developers", "JavaScript", "Web Development", "Developer"],
+		"description": "Node.js is a JavaScript runtime that allows you to execute JavaScript code outside of a web browser. React relies on Node.js",
+		"date": "Fri Nov 03 2023"
+	}
+]
