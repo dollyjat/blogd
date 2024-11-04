@@ -1,8 +1,9 @@
 import { writable } from 'svelte/store';
-import type { SearchMeta } from '../../app';
 
 const navOpen = writable(false);
 
-const searchData = writable<SearchMeta[]>([]);
+const isSearchOpen = writable(false);
 
-export { navOpen, searchData };
+const searachValue = writable('');
+
+export { isSearchOpen, navOpen, searachValue };

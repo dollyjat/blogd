@@ -24,7 +24,7 @@
 
 <aside
 	class:hidden={!nav_Open}
-	class="h-full w-fit animate-fade-right border-r-2 border-bg-box md:block"
+	class="fixed z-40 h-full w-fit animate-fade-right border-r-2 border-bg-box md:static md:block"
 	aria-label="Sidebar"
 >
 	<div

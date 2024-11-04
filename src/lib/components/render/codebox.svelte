@@ -20,10 +20,8 @@
 	}
 </script>
 
-<div class="flex w-full flex-col py-5">
-	<div
-		class="flex justify-between rounded-t-md bg-bg-box px-5 py-2 text-text-small"
-	>
+<div class="flex max-h-[35rem] w-full flex-col py-5">
+	<div class="flex justify-between rounded-t-md bg-bg-box px-5 py-2 text-text-small">
 		<span>{lang}</span><button onclick={copy}
 			>{#if !coping}
 				<Clipboard />
@@ -32,5 +30,5 @@
 			{/if}</button
 		>
 	</div>
-	<HighlightSvelte code={text}></HighlightSvelte>
+	<HighlightSvelte class="overflow-y-auto" code={text}></HighlightSvelte>
 </div>

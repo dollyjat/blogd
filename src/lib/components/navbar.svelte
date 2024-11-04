@@ -1,10 +1,7 @@
 <script lang="ts">
-	import { navOpen } from '$lib/store/layout.svelte';
+	import { isSearchOpen, navOpen } from '$lib/store/layout.svelte';
 	import { Moon, Sun, Menu, SquareX } from 'lucide-svelte';
 	import { toggleMode, mode } from 'mode-watcher';
-	import Searchbox from './searchbox.svelte';
-
-	let isSearchOpen = $state(false);
 
 	function toggleNav() {
 		navOpen.update((value) => {
@@ -13,28 +10,20 @@
 	}
 </script>
 
-{#if isSearchOpen}
-	<Searchbox />
-{/if}
-
 <nav
 	class=" w-full animate-fade-down divide-gray-200 border-b-2 border-bg-box bg-bg-layout px-2 py-2.5 text-text-layout animate-duration-[1000ms] animate-once sm:px-4"
 >
 	<div class="container mx-auto flex items-center justify-between">
 		<a href="/" class="flex items-center"
 			><img
-				src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg"
-				class="me-3 h-6 sm:h-9"
+				src="https://cdn-icons-png.flaticon.com/512/10125/10125177.png"
+				class="me-3 w-11"
 				alt="Flowbite Logo"
 			/>
-			<span class="self-center whitespace-nowrap text-xl font-semibold"
-				>Flowbite</span
-			></a
+			<span class="self-center whitespace-nowrap text-xl font-semibold">Flowbite</span></a
 		>
-		<div class="relative hidden md:block">
-			<div
-				class="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3"
-			>
+		<div class="relative hidden w-96 md:block">
+			<div class="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -52,16 +41,16 @@
 			</div>
 
 			<input
-				onclick={() => (isSearchOpen = !isSearchOpen)}
-				id="search-navbar"
+				onclick={() => isSearchOpen.update((value) => !value)}
 				class="bg-bg-bg block w-full rounded-lg border border-bg-box p-2.5 ps-10 text-sm text-text-layout outline-none rtl:text-right"
 				placeholder="Search..."
 				type="text"
-				autocomplete="off"
+				autocomplete=""
 			/>
 		</div>
 		<div class="flex">
 			<button
+				onclick={() => isSearchOpen.update((value) => !value)}
 				aria-label="Menu"
 				class="me-1 inline-flex items-center justify-center rounded-lg p-2.5 text-center text-sm font-medium focus-within:outline-none focus-within:ring-4 focus:outline-none focus:ring-4 focus:ring-gray-200 md:hidden"
 				><svg

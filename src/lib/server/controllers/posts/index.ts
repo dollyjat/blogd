@@ -1,5 +1,5 @@
 import { db } from '$lib/server/db';
-import { post } from '$lib/server/db/schema';
+import { post, postData } from '$lib/server/db/schema';
 import { eq } from 'drizzle-orm';
 import { asc, gt, arrayContains } from 'drizzle-orm';
 
@@ -18,7 +18,16 @@ export const getPostMetaSearch = async () => {
 };
 
 export const getPostBySlug = async (slug: string) => {
-	return await db.select().from(post).where(eq(post.slug, slug));
+	return await db.select().from(post).limit(1).where(eq(post.slug, slug));
+};
+
+export const getPostMdById = async (id: string) => {
+	return await db
+		.select({
+			content: postData.content
+		})
+		.from(postData)
+		.where(eq(postData.postId, id));
 };
 
 export const getPostsByTag = async (tag: string) => {

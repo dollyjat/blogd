@@ -13,7 +13,12 @@ declare global {
 export {};
 
 export interface SearchMeta {
+	item: Item;
+	refIndex: number;
+}
+
+export interface Item {
+	title: string;
 	slug: string;
 	tags: string[];
-	title: string;
 }

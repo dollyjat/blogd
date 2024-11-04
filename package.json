@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview",
+		"preview": " vite build && vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
@@ -16,6 +16,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-node": "^5.2.9",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/eslint": "^9.6.0",
@@ -39,10 +40,12 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/noto-serif": "^5.1.0",
+		"@humanspeak/svelte-markdown": "0.5.3",
 		"@types/node": "^22.8.6",
 		"axios": "^1.7.7",
 		"better-auth": "^0.6.2",
 		"drizzle-orm": "^0.36.0",
+		"fuse.js": "^7.0.0",
 		"lucide-svelte": "^0.454.0",
 		"mode-watcher": "^0.4.1",
 		"pg": "^8.13.1",

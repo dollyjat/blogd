@@ -53,6 +53,14 @@ body {
 		white-space: pre-wrap;
 		word-wrap: break-word;
 	}
+
+	*::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	img {
+		@apply mx-auto rounded-lg border-2 border-bg-box;
+	}
 }
 
 .markdown {
